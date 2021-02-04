@@ -54,8 +54,15 @@ div#wrap{
 	border: 1px solid #f00;
 
 	position: relative;
+	left: 0;
+
+	transition: all 3s;
 }
 
+#main  div#slideShow:hover {
+	left: -1200px;
+
+}
 #main  div#slideShow>ul>li {
 	position: absolute;
 }
