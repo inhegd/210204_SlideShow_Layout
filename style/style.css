@@ -1,0 +1,72 @@
+@charset "utf-8" ;
+
+/* reset */
+*{
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a               {	text-decoration: none;	}
+a:link          { 	color: #555; 		 }
+a:visited      { 	color: #555; 		}
+a:hover       {    color: #777; 	   }
+a:active       { 	color: #888; 		}
+a:focus        { 	color: #555; 	    }
+
+ul               {	list-style: none;   	}
+
+/* reset */
+
+
+/* div#wrap 시작 */
+
+div#wrap{
+	width: 1200px;
+	border: 1px solid #000;
+}
+
+#wrap>*{
+	border: 1px solid #000;
+
+}
+
+#header, #aside, #footer{
+	height: 100px;
+}
+/* div#wrap  끝 */
+
+
+/* 슬라이드 쇼 레이아웃 시작 */
+#main div#slideArea{
+	width: 1200px;
+	height: 300px;
+
+	overflow: hidden; /* 범위초과 감쳐주기 */
+}
+
+#main  div#slideShow{
+	 /* width: 3608px;  이미지 3개가 나란히 대기해야하니까, 밑에 보더 값도 포함 */
+
+	width: 3600px;
+	height: 300px;
+	border: 1px solid #f00;
+
+	position: relative;
+}
+
+#main  div#slideShow>ul>li {
+	position: absolute;
+}
+
+#main  div#slideShow>ul>li:nth-child(2){
+	left: 1200px;
+}
+
+#main  div#slideShow>ul>li:nth-child(3){
+	left: 2400px;
+}
+/* 슬라이드 쇼 레이아웃 끝 */
+
+
